@@ -7,9 +7,11 @@ import DataMappingFromJSON from "./components/DataMappingFromJSON";
 import UseStateHookesCounter from "./components/UseStateHookesCounter";
 import UseStateWithObject from "./components/UseStateWithObject";
 import UseStateWIthArray from "./components/UseStateWIthArray";
+import UseEffectHooks from "./components/UseEffectHooks";
+import UseEffectWithCleanUpFunction from "./components/useEffectWithCleanUpFucntion";
 const App = () => {
   return (
-    <div>
+    <div className="m-10">
       <Prop name="Propy" />
       <WholeDomAsProps>
         <h1>I am Dom as a Props.</h1>
@@ -21,6 +23,8 @@ const App = () => {
       <UseStateHookesCounter/>
       <UseStateWithObject/>
       <UseStateWIthArray/>
+      <UseEffectHooks/>
+      <UseEffectWithCleanUpFunction/>
     </div>
   );
 };
