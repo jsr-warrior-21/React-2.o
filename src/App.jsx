@@ -1,4 +1,12 @@
 import React from "react";
+import { useContext,createContext } from "react";
+
+// creating UserContext
+
+const UserContext = createContext();
+
+
+
 import Prop from "./components/Prop";
 import WholeDomAsProps from "./components/WholeDomAsProps";
 import Button from "./components/Button";
@@ -9,6 +17,12 @@ import UseStateWithObject from "./components/UseStateWithObject";
 import UseStateWIthArray from "./components/UseStateWIthArray";
 import UseEffectHooks from "./components/UseEffectHooks";
 import UseEffectWithCleanUpFunction from "./components/useEffectWithCleanUpFucntion";
+import UseContextHooks from "./components/UseContextHooks";
+
+
+
+
+
 const App = () => {
   return (
     <div className="m-10">
@@ -20,13 +34,23 @@ const App = () => {
       <MethodAsProps button={Button}/>
       {/* --> passing Button components as a props in the methodAsProp components */}
       <DataMappingFromJSON/>
-      <UseStateHookesCounter/>
+      <UseStateHookesCounter/>  
       <UseStateWithObject/>
       <UseStateWIthArray/>
       <UseEffectHooks/>
       <UseEffectWithCleanUpFunction/>
+
+      {/* wrap parent component by UserContext.Provider  and Passing Props*/}
+      {/* UseContext me props hamesha value hona chahiye uske alawa kuchh nahi */}
+      <UserContext.Provider value="I'm Arvind.">
+      <UseContextHooks/>
+      </UserContext.Provider>
+
+
+
     </div>
   );
 };
 
+export {UserContext}; // You Must have to export UserContext also
 export default App;
