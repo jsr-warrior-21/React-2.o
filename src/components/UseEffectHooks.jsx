@@ -5,6 +5,20 @@ React components re-render often when state/props change,
 but side effects (API calls, subscriptions) shouldn't run during rendering—
 they cause bugs or infinite loops. useEffect delays them until after the screen updates safely
 */}
+
+
+{/*
+    | Dependency                         | Kab chalta hai?                  |
+| ---------------------------------- | -------------------------------- |
+| useEffect(() => {})                | Har render pe                    |
+| useEffect(() => {}, [])            | Sirf mount pe (1 baar)           |
+| useEffect(() => {}, [count])       | Mount + jab count change         |
+| useEffect(() => {}, [count, name]) | Mount + jab count YA name change |
+
+*/}
+
+
+
 import React from 'react'
 import { useEffect,useState } from 'react'
 const UseEffectHooks = () => {
