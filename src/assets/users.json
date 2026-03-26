@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "status": "active"
+  },
+  {
+    "id": 2,
+    "name": "Anna Smith",
+    "email": "anna.smith@example.com",
+    "status": "pending"
+  },
+  {
+    "id": 3,
+    "name": "Peter Jones",
+    "email": "peter.jones@example.com",
+    "status": "active"
+  },
+  {
+    "id": 4,
+    "name": "Jane Doe",
+    "email": "jane.doe@example.com",
+    "status": "inactive"
+  }
+]
