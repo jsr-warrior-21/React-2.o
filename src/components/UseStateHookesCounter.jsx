@@ -1,5 +1,16 @@
 import { useState } from 'react'
 
+
+// 1. State MEMORY mein store karta hai
+// 2. Component re-render trigger karta hai
+// 3. Purana value yaad rakhta hai
+// React internally:
+// ✅ Hook order track karta hai (index 0,1,2...)
+// ✅ Component ke beech state save karta hai
+// ✅ setState ko queue mein daal deta hai
+// ✅ Batching karta hai (multiple updates ek saath)
+// ✅ Re-render schedule karta hai
+
 const UseStateHookesCounter = () => {
     const [count,setCount] = useState(0);
 
