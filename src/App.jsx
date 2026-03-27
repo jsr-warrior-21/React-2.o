@@ -21,6 +21,7 @@ import UseContextHooks from "./components/UseContextHooks";
 import UseRefHook from "./components/UseRefHook";
 import UseMemoHook from "./components/UseMemoHook";
 import UseMemoProblemSolution from "./components/UseMemoProblemSolution";
+import UseCallBackHooks from "./components/UseCallBackHooks";
 
 
 const App = () => {
@@ -49,6 +50,7 @@ const App = () => {
       <UseRefHook/>
       <UseMemoHook/>
       <UseMemoProblemSolution/>
+      <UseCallBackHooks/>
 
     </div>
   );
