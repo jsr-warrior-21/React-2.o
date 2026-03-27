@@ -19,8 +19,8 @@ import UseEffectHooks from "./components/UseEffectHooks";
 import UseEffectWithCleanUpFunction from "./components/useEffectWithCleanUpFucntion";
 import UseContextHooks from "./components/UseContextHooks";
 import UseRefHook from "./components/UseRefHook";
-
-
+import UseMemoHook from "./components/UseMemoHook";
+import UseMemoProblemSolution from "./components/UseMemoProblemSolution";
 
 
 const App = () => {
@@ -47,7 +47,8 @@ const App = () => {
       </UserContext.Provider>
 
       <UseRefHook/>
-
+      <UseMemoHook/>
+      <UseMemoProblemSolution/>
 
     </div>
   );
