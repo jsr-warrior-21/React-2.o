@@ -23,6 +23,7 @@ import UseMemoHook from "./components/UseMemoHook";
 import UseMemoProblemSolution from "./components/UseMemoProblemSolution";
 import UseCallBackHooks from "./components/UseCallBackHooks";
 import UseReducerHooks from "./components/UseReducerHooks";
+import UseLayoutEffectHooks from "./components/UseLayoutEffectHooks";
 
 
 const App = () => {
@@ -54,6 +55,8 @@ const App = () => {
       <UseCallBackHooks/>
 
       <UseReducerHooks/>
+
+      <UseLayoutEffectHooks/>
 
     </div>
   );

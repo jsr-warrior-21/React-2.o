@@ -1,6 +1,6 @@
 import React from 'react'
 import { useReducer } from 'react'
-
+ // useReducer function is the big brother of useState hook
 const UseReducerHooks = () => {
 
     const initialState = {count:0}; // this is initial value of state as a object
@@ -16,6 +16,12 @@ const UseReducerHooks = () => {
             }
             case 'decrease':{
                 return {count : state.count - 1};
+            }
+            case 'input' : {
+                return {count:action.payload};
+            }
+            default : {
+                return state;
             }
         }
     }
